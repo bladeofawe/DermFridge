@@ -1,0 +1,195 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[table,xcdraw]{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{DermFridge\\ {\footnotesize Software Engineering (CSE406) : Hanyang University, Seoul, South Korea}}
+
+\author
+{
+\IEEEauthorblockN{Kenneth Vaughn Daniel}
+\IEEEauthorblockA{\textit{vaughndanielsiburian@gmail.com} \\ Universitas Gadjah Mada, Yogyakarta, Indonesia}
+\and
+\IEEEauthorblockN{Lam Henrik}
+\IEEEauthorblockA{\textit{henriklam5555@gmail.com} \\ Chalmers University of Technology, Gothenburg, Sweden}
+\and
+\IEEEauthorblockN{Lahraoui Amina}
+\IEEEauthorblockA{\textit{aminalahraoui12@gmail.com} \\ Al Akhawayn University, Ifrane, Morocco}
+\and
+\IEEEauthorblockN{Howlader Shajnin}
+\IEEEauthorblockA{\textit{Shajninhowlader@gmail.com} \\ Muhlenberg College, New York, United States}
+\and
+\IEEEauthorblockN{Belarbi Leo}
+\IEEEauthorblockA{\textit{leomehdibelarbi@gmail.comm} \\ ESGI, Paris, France}
+}
+
+\maketitle
+
+\begin{abstract}
+This project presents an AI-powered personal assistant designed to connect nutrition and skincare through intelligent data analysis. By combining facial image recognition with food identification, the system determines the user’s skin type and analyzes the contents of their refrigerator to recommend personalized meals, snacks, and beverages that promote healthier skin. Beyond personalized dietary guidance, the application encourages users to make optimal use of their available ingredients, thus reducing food waste. \\
+Driven by the rise of personalized health technologies and the increasing accessibility of computer vision tools, this assistant bridges the gap between skincare and nutrition-focused applications. It supports both personal well-being and environmental sustainability by helping users understand the impact of dietary habits on their skin condition and guiding them toward smarter, skin-friendly food choices. Ultimately, the project aims to empower users to maintain healthy skin naturally while fostering more sustainable and informed eating practices.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Artificial Intelligence, Nutrition, Skincare, Health Technology
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+\subsection{Problem}
+
+Recent research has shown strong correlations between dietary habits and various skin conditions such as acne, dryness, and inflammation. However, most individuals remain unaware of how their daily meals affect their skin health. As a result, people may unintentionally consume foods that worsen certain skin problems or neglect those that could improve their complexion. \\
+
+The proposed assistant addresses this issue by analyzing the user’s skin condition through image recognition and nutritional data. Based on the identified skin type—such as oily, dry, acne-prone, or dull—it cross-references the nutrients available in the user’s refrigerator to recommend meals and drinks that align with their skin’s specific needs. When the user’s refrigerator lacks the nutrients beneficial for their skin, the application can notify them of the missing elements and suggest suitable grocery options or simple alternatives. This feature helps users build awareness of how nutrition influences skin health and promotes more balanced, skin-supportive diets. \\
+
+Moreover, many individuals leave food unused simply because they do not know how to combine it in a healthy way. The system therefore serves as an intelligent bridge between skincare and nutrition, helping users maximize their existing resources while improving their knowledge of food’s impact on skin condition. By doing so, it contributes to both healthier lifestyles and reduced food waste.
+
+\subsection{Motivation}
+
+The concept of this project arises from the growing global trend of personalized health and beauty solutions powered by artificial intelligence, particularly evident in regions such as South Korea. While many people invest in skincare products, they often overlook the critical role that diet plays in achieving healthy, radiant skin. Nutrient imbalances—such as excessive sugar or dairy intake—can significantly affect conditions like acne, dryness, or dullness. \\
+
+At the same time, AI-based skin analysis and food recognition technologies have become increasingly affordable and accessible. However, most existing tools focus exclusively on either skincare or nutrition, without integrating the two domains. This gap presents an opportunity to develop an application that combines both: a personal AI assistant capable of identifying skin conditions through facial analysis and recommending suitable meals based on the user’s available ingredients.
+Beyond personal health, the project also aligns with broader sustainability goals. By encouraging users to utilize the ingredients they already have, the system contributes to reducing food waste and promoting more environmentally responsible behavior. In this way, it supports both individual wellness and global sustainability efforts. \\
+
+Ultimately, the proposed assistant aims to provide users with convenient, AI-based insights that help them eat smarter, enhance their skin health naturally, and reduce unnecessary spending on excess products or wasted food.
+
+\subsection{Existing products}
+
+It is not a surprise that there are already existing smart fridges and AI mirror tools in today’s market, however, there is no current tool that combines the two, leaving a gap which we hope to fill.
+
+\vspace{0.5em} 
+\begin{itemize}
+    \item \textbf{Samsung MicroLED smart mirror :} A classic mirror with the functionality of a skin analysis from a salon. The mirror was developed by Samsung in collaboration with leading Korean beauty brand Amorepacific, and is able to analyze the user’s skin in 30 seconds, and provide personalized skin care recommendations, and a list of products that matches specific needs. The algorithm was developed by Amorepacific, using data from 20,000 skin diagnoses, providing users with 85\% accuracy. Artificial intelligence also plays a role in this.\cite{b1}
+    \item \textbf{Samsung AI Vision Inside :} Automatically tracks what is being put in your fridge. and taken out, using a camera positioned above. Allows you to view what is inside your fridge from your phone, using their smartThings app. The system leverages AI technology to identify foods, recommend customized recipes, and connect with cooking appliances. The system additionally tracks expiration dates.\cite{b2}
+    \item \textbf{MySkin by Cetaphil :} Assesses your skin and provides a tailored skincare solution just for you through the power of innovative artificial intelligence (AI) skin technology. You have to scan their website’s QR code to be directed to the browser for MySkin by Cetaphil, where you are able to take a selfie, which is then analyzed. You are able to receive a skincare analysis report and skincare product recommendations. Their AI is powered by PerfectCorp AI, and provides usage for their API on their site.\cite{b3}
+    \item \textbf{Stroke Striker :} Strokes can be pre-diagnosed with a method called BE-FAST (Balance, Eyes, Face, Arm, Speech, Terrible headache) that analyzes facial expression changes due to the paralysis of facial muscles. This AI-Based application aims to provide a preemptive and active health care service that periodically checks the health of the people living in a household, in order to detect signs of diseases in advance, by scanning faces using a camera that would be placed inside the fridge at head level.\cite{b4}
+\end{itemize}
+
+\subsection{Role Assignments}
+
+\begin{table}[htbp!]
+\normalsize
+\centering
+\begin{tabular}{|p{2cm}|p{2.2cm}|p{3cm}|}
+\hline \rowcolor{gray!20} \textbf{Role} & \textbf{Name} & \textbf{Responsibilities} \\
+\hline User & Shajnin, Amina & ? \\ 
+\hline Customer & LG Electronics & ? \\
+\hline Developer & Léo, Vaughn, Amina, Henrik, Shajnin & \textbf{Front-end}, \textbf{DevOps}, \textbf{Back-end}, \textbf{AI}, \textbf{QA} \\
+\hline Development Manager & Léo & ? \\
+\hline \end{tabular}
+\end{table}
+
+\section{Requirements}
+
+\subsection{Web interface}
+
+The application takes the form of a simple and fluid web interface. When opened, the user can choose between two main modes of interaction:
+
+\begin{itemize}
+    \item \textbf{Face Scan:} allows real-time or photo-based facial analysis to evaluate skin condition and generate personalized recommendations.
+    \item \textbf{Inventory:} opens a dashboard displaying the user’s fridge contents, detected automatically or entered manually.
+\end{itemize}
+
+The interface is fully responsive and adapts to computers, tablets, and smartphones, ensuring clarity and comfort for all users.
+
+\subsection{Authentication and profile}
+
+An authentication system allows users to create and manage their personal profiles. Each account securely stores facial analysis history, preferences, and inventory data. This ensures personalized recommendations and consistent tracking across sessions.
+
+\subsection{Settings}
+
+A configuration section enables users to customize their experience. Options include dietary preferences, notification frequency, language selection, and privacy controls. This personalization ensures an adaptable and user-friendly interface.
+
+\subsection{Analysis}
+
+Each captured image or video frame is processed by the AI model to extract relevant indicators. The system interprets facial features to assess hydration, oiliness, or potential deficiencies, and generates corresponding dietary advice. In the inventory mode, objects are recognized, categorized, and linked to nutritional information to match facial recommendations.
+
+\subsection{Error and anomaly management}
+
+The system detects and handles common issues such as camera access failure, poor lighting, communication loss, or data storage errors. In every case, the user is clearly notified, and the software minimizes data loss and service interruption.
+
+\subsection{Database}
+
+All analyses and user data are stored in a structured and secure database. Each record includes timestamps, extracted indicators, recommendations, and user identification. This organization allows tracking, statistics, and continuous model improvement while maintaining privacy standards.
+
+\subsection{Performance}
+
+The application has been designed to run efficiently on most hardware configurations, optimizing image processing via the CPU without requiring a dedicated GPU. The performance goal is to maintain a processing time of less than 1.5 seconds per image on a standard workstation, in order to guarantee a smooth experience, even when used in real time via camera.
+
+\subsection{IoT integration}
+
+An upgradeable version of the project is planned for embedded integration on connected devices such as smart trash cans or sorting terminals. This version will be based on a lightweight containerized architecture, combined with a camera and sensors, enabling local waste detection and processing without dependence on the cloud.
+
+\section{Development Environment}
+
+\subsection{Development Platform}
+
+For the development of our web application, we chose a work environment based on the use of Docker containers. This solution ensures consistency across all development setups while allowing each team member to use their preferred operating system—whether Windows, macOS, or Linux. \\
+
+With Docker, each developer benefits from an isolated, reproducible environment identical to those of other team members, eliminating compatibility issues and simplifying dependency management.  
+Most of the team works on Windows 11 and macOS, and since Docker is fully compatible with both, it guarantees a seamless experience for everyone. \\
+
+Finally, this approach facilitates the transition to production, where services will be deployed as containers orchestrated by Kubernetes.
+
+\subsection{Technical Stack}
+
+For the application’s development, we decided to rely exclusively on open-source tools to ensure flexibility, transparency, and compatibility with modern software development standards.
+
+\vspace{0.5em}
+\subsubsection{Frontend}
+\begin{itemize}
+    \item \textbf{React:} Used to build a dynamic, component-based web interface that ensures a smooth and responsive user experience.
+    \item \textbf{TypeScript:} Adds static typing to JavaScript, improving reliability, readability, and maintainability of the frontend codebase.
+    \item \textbf{Tailwind CSS:} Enables rapid and consistent styling through a utility-first approach, ensuring a clean and adaptive design.
+\end{itemize}
+
+\vspace{0.5em}
+\subsubsection{Backend}
+\begin{itemize}
+    \item \textbf{FastAPI:} A high-performance Python framework used for building the REST API, providing efficient request handling and easy integration with AI modules.
+\end{itemize}
+
+\vspace{0.5em}
+\subsubsection{Analysis AI}
+\begin{itemize}
+    \item \textbf{?:} Used for image recognition and object detection, enabling accurate food and skin analysis through deep learning models.
+\end{itemize}
+
+\vspace{0.5em}
+\subsubsection{Database}
+\begin{itemize}
+    \item \textbf{PostgreSQL:} A robust open-source relational database used to securely store user profiles, scan data, and analysis results.
+\end{itemize}
+
+\vspace{0.5em}
+\subsubsection{Development Tools}
+\begin{itemize}
+    \item \textbf{Git \& GitHub:} Version control and collaborative platform for managing code changes and coordinating team work.
+    \item \textbf{Docker:} Provides containerized environments for consistent deployment and development across all systems.
+    \item \textbf{Kubernetes:} Used for container orchestration and automated deployment in production environments.
+    \item \textbf{Visual Studio Code:} Main development environment offering extensibility and integrated debugging tools.
+    \item \textbf{LibreOffice:} Used for document editing and report preparation.
+    \item \textbf{KakaoTalk:} Serves as a lightweight communication channel for daily coordination within the development team.
+\end{itemize}
+
+\subsection{Cost Estimation}
+
+Software costs are minimal, as all development tools used are free and open-source. Hardware costs are covered by each team member’s personal machine using Docker. However, if new computers were needed, an estimated cost of approximately 600 EUR per person has been considered for development-ready devices (e.g., \textit{Lenovo ThinkPad E15, Intel Core i5, 8 GB RAM, 256 GB SSD}). Deployment costs will involve hosting the application on Amazon Web Services for production, which simplifies infrastructure management, scalability, and security. Main resources include an Amazon EKS (Elastic Kubernetes Service) cluster, an RDS instance for the backend database, S3 storage for images and files, and a Domain Name System (DNS) for hosting the web interface.
+
+
+\begin{thebibliography}{00}
+\bibitem{b1} https://samsungmagazine.eu/en/2025/01/12/chytre-zrcadlo/ 
+\bibitem{b2} https://www.idsa.org/awards-recognition/idea/idea-gallery/ai-vision-inside/ 
+\bibitem{b3} https://www.cetaphil.com/us/skin-analysis.html
+\bibitem{b3} https://www.youtube.com/watch?v=XglI0ev\_tus\&t=20s
+\end{thebibliography}
+\end{document}

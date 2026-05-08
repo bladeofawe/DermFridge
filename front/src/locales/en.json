@@ -1,0 +1,206 @@
+{
+    "header": {
+        "location": "Hanyang University, Seoul, South Korea"
+    },
+    "hero": {
+        "course": "Software Engineering",
+        "description": "AI-powered personal assistant that connects nutrition and skincare by analyzing your facial features and fridge content to recommend personalized, skin-friendly meals.",
+        "features": {
+            "skin": "Skin Analysis",
+            "food": "Fridge Scan",
+            "recommend": "Recommendations"
+        },
+        "cta": "Start"
+    },
+    "common": {
+        "loading" : "Loading ...",
+        "back": "Back",
+        "close": "Close"
+    },
+    "notfound": {
+        "message": "Oops! The page you’re looking for doesn’t exist or has been moved.",
+        "button": "Back to home",
+        "contactText": "You can also",
+        "contactLink": "contact us",
+        "contactEnd": "if the problem persists."
+    },
+    "auth": {
+        "login": "Login",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Password confirmation",
+        "submit": "Sign In",
+        "noAccount": "Don't have an account?",
+        "haveAccount": "I have an account",
+        "signin": "Sign up",
+        "forgot": "Forgot your password?",
+        "reset": "Reset it",
+        "skipAuth": "Skip",
+        "submitForgot": "Send reset link",
+        "tryAnotherEmail": "Try another email",
+        "successMessage": "A password reset link has been sent to {{email}}. Please check your inbox.",
+        "errors": {
+            "nameRequired": "Name is required",
+            "emailRequired": "Email is required",
+            "passwordRequired": "Password is required",
+            "confirmPasswordRequired": "Password confirmation is required",
+            "emailInvalid": "Please enter a valid email address",
+            "passwordTooShort": "Password must be at least 8 characters long",
+            "passwordWeak": "Password must include at least one uppercase letter, one lowercase letter, one number, and one special character",
+            "passwordMismatch": "Passwords do not match",
+            "limitRequest" : "Too many attempts, try again after 5 minutes",
+            "authFailed": "Invalid email or password",
+            "form": "An error occurred. Please try again",
+            "connectionError": "Connection error. Please check your internet connection"
+        }
+    },
+    "home": {
+        "faceScan.title": "Face Scan",
+        "faceScan.description": "Analyze your skin condition from photos",
+        "inventory.title": "Inventory",
+        "inventory.description": "View and manage your fridge contents",
+        "viewInventory": "View Inventory",
+        "viewInventoryDesc": "Check your current food stock and items",
+        "getStarted": "Get Started",
+        "stats.scans": "Scans",
+        "stats.items": "Items",
+        "stats.recommendations": "Recommendations",
+        "stats.alerts": "Alerts",
+        "viewHistory": "View Analysis History",
+        "viewHistoryDesc": "See all your past skin analyses"
+    },
+    "settings": {
+        "title": "Settings",
+        "back": "Back",
+        "save": "Save Settings",
+        "dietary.title": "Dietary Preferences",
+        "dietary.description": "Set your dietary restrictions and preferences",
+        "dietary.none": "None",
+        "dietary.vegetarian": "Vegetarian",
+        "dietary.vegan": "Vegan",
+        "dietary.glutenFree": "Gluten-Free",
+        "notifications.title": "Notification Frequency",
+        "notifications.description": "Choose how often you receive updates",
+        "notifications.realtime": "Real-time",
+        "notifications.daily": "Daily",
+        "notifications.weekly": "Weekly",
+        "notifications.off": "Off",
+        "language.title": "Language",
+        "language.description": "Select your preferred language",
+        "privacy.title": "Privacy Mode",
+        "privacy.description": "Enhanced privacy and data protection"
+    },
+    "camera": {
+        "chooseMode": "Choose a mode",
+        "captureDescription": "Use your camera",
+        "importDescription": "Import an image",
+        "capturePhoto": "Capture Photo",
+        "importPhoto": "Import Photo",
+        "dropImage": "Drop your image here",
+        "selectImage": "or click to select an image",
+        "preview": "Preview",
+        "previewAlt": "Captured photo preview",
+        "selectCamera": "Select Camera",
+        "defaultCamera": "Default Camera",
+        "camera": "Camera",
+        "start": "Start",
+        "stop": "Stop",
+        "toggle": "Toggle Camera",
+        "capture": "Capture",
+        "import": "Import",
+        "download": "Download",
+        "delete": "Delete",
+        "back": "Back",
+        "noCaptured": "No photo captured yet",
+        "importImage": "Import an image",
+        "upload": "Upload",
+        "uploading": "Upload...",
+        "uploadSuccess": "Photo save",
+        "errors": {
+            "uploadFail": "Upload failed",
+            "uploadError": "Error during upload",
+            "analysisError": "Analysis failed"
+        }
+    },
+    "analysis": {
+      "loading": "Analyzing your skin...",
+      "backToCapture": "Back to Capture",
+      "title": "Skin Analysis Results",
+      "skinProblems": "Detected Skin Problems",
+      "recommendations": "Recommended Vitamins & Nutrients",
+      "noIssues": "No Major Issues Detected",
+      "noIssuesDesc": "Your skin appears to be in good condition. Continue maintaining a healthy diet and skincare routine.",
+      "viewHistory": "View History",
+      "newScan": "New Scan",
+      "skinAge": "Skin Age",
+      "yourSkinReport": "YOUR SKIN REPORT",
+      "skinHealthMatrix": "Skin Health Matrix",
+      "photoLoading": "Photo is loading...",
+      "analysisLoading": "Analysis data is loading. Please wait...",
+      "metrics": {
+        "blemish": "Blemish",
+        "oiliness": "Oiliness",
+        "redness": "Redness",
+        "darkCircles": "Dark Circles",
+        "wrinkles": "Wrinkles",
+        "texture": "Texture",
+        "darkSpots": "Dark Spots",
+        "hydration": "Hydration"
+      },
+      "problems": {
+        "acneBlemishes": "Acne/Blemishes: {{count}} lesions ({{severity}} severity)",
+        "enlargedPores": "Enlarged Pores: {{count}} pores detected",
+        "darkSpotsPigmentation": "Dark Spots/Pigmentation: {{count}} spots detected",
+        "wrinklesDetected": "Wrinkles detected in facial regions",
+        "overallSeverity": "Overall Severity: {{severity}} (weighted score: {{score}})",
+        "imageQuality": "Image Quality: {{quality}} (score: {{score}}%)"
+      }
+    },
+    "history": {
+        "title": "Analysis History",
+        "loading": "Loading history...",
+        "noAnalyses": "No Analyses Yet",
+        "noAnalysesDesc": "Start by taking a face scan to see your analysis history here.",
+        "startScan": "Start Face Scan",
+        "view": "View Details",
+        "skinProblems": "Skin Problems:",
+        "recommendations": "Recommendations:",
+        "noData": "No specific issues or recommendations found in this analysis."
+    },
+    "inventory": {
+        "title": "Your Inventory",
+        "subtitle": "Manage your scanned food items",
+        "back": "Back",
+        "stats": {
+            "totalItems": "Total Items",
+            "avgConfidence": "Avg Confidence",
+            "withNutrition": "With Nutrition"
+        },
+        "empty": {
+            "title": "No items yet",
+            "description": "Start scanning food to build your inventory",
+            "scanButton": "Scan Food Item"
+        },
+        "item": {
+            "confidence": "Confidence",
+            "nutrition": "Nutrition Info",
+            "addedOn": "Added on",
+            "delete": "Delete Item",
+            "nutritionInfo": "Nutritional Information"
+        },
+        "notifications": {
+            "loadFailed": "Failed to load items",
+            "deleteSuccess": "Item deleted successfully",
+            "deleteFailed": "Failed to delete item"
+        },
+        "nutrition": {
+            "calories": "Calories",
+            "protein": "Protein",
+            "carbs": "Carbs",
+            "details": "Nutritional Details",
+            "vitamins": "Vitamins",
+            "minerals": "Minerals"
+        }
+    }
+}

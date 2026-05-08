@@ -1,0 +1,10 @@
+node_modules
+dist
+
+# === Logs ===
+npm-debug.log*
+
+# === Fichiers de config, d'environnement ou docker ===
+README.md
+coverage
+.env
